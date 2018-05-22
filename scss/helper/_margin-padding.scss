@@ -1,0 +1,49 @@
+/* ===== Margin and Padding ===== */
+
+/* Variables */
+
+$margin-padding: 0, 5, 10, 15, 20, 25, 30, 35, 40, 45, 50, 60, 70, 80, 90, 100, 110, 120, 130, 140, 150;
+
+$margins: (
+  m:  margin,
+  mt: margin-top,
+  ml: margin-left,
+  mr: margin-right,
+  mb: margin-bottom
+);
+
+$paddings: (
+  p:  padding,
+  pt: padding-top,
+  pl: padding-left,
+  pr: padding-right,
+  pb: padding-bottom
+);
+
+/* Mixins */
+
+@mixin calc-margin-padding($class, $property) {
+  @each $number in $margin-padding {
+    .#{$class}-#{$number} {
+      #{$property}: $number + px !important;
+    }
+  }
+}
+
+/* Classes */
+
+@each $screen in map-keys($screen-sizes) {
+  @include from-screen-size($screen) {
+    $infix: get-infix($screen);
+
+    /* Margin Classes */
+    @each $class, $property in $margins {
+      @include calc-margin-padding($class + $infix, $property);
+    }
+
+    /* Padding Classes */
+    @each $class, $property in $paddings {
+      @include calc-margin-padding($class + $infix, $property);
+    }
+  }
+}

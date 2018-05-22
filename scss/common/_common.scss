@@ -1,0 +1,58 @@
+/* ===== Common ===== */
+
+/* Basic */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  max-width: 100%;
+}
+
+html, html a {
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  max-width: 100%;
+  font-family: $body-font-family;
+  font-size: $body-font-size + px;
+  line-height: $body-line-height;
+  color: $body-text-color;
+  background-color: $body-background-color;
+}
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+iframe {
+  border: none;
+  width: 100%;
+}
+
+button {
+  outline: none;
+  border: none;
+}
+
+p {
+  margin: 0 0 20px 0;
+}
+
+a {
+  color: $primary;
+  text-decoration: none;
+  outline: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+:focus {
+  outline: none;
+}

@@ -1,0 +1,21 @@
+/* ===== Font Sizes ===== */
+
+/* Variables */
+
+$font-sizes-small: 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27;
+
+$font-sizes-big: 28, 29, 30, 32, 36, 38, 40, 42, 44, 46, 48, 54, 60, 64, 72, 78, 90, 100, 150, 200;
+
+/* Classes */
+
+@each $font in $font-sizes-small {
+  .font-#{$font} {
+    font-size: $font * 1px !important;
+  }
+}
+
+@each $font in $font-sizes-big {
+  .font-#{$font} {
+    font-size: $font * 1px !important;
+  }
+}

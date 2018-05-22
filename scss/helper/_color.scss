@@ -1,0 +1,17 @@
+/* ===== Color ===== */
+
+/* Background Color Classes */
+
+@each $name, $color in $colors {
+  .bg-#{$name} {
+    background-color: $color !important;
+  }
+}
+
+/* Text Color Classes */
+
+@each $name, $color in $colors {
+  .text-#{$name} {
+    color: $color !important;
+  }
+}

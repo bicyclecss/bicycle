@@ -1,0 +1,25 @@
+/* ===== Border ===== */
+
+/* Variables */
+
+$borders: border, border-top, border-left, border-right, border-bottom;
+
+/* Border Classes */
+
+@each $border in $borders {
+  .#{$border} {
+    #{$border}: 1px solid $default !important;
+  }
+}
+
+@each $border in $borders {
+  .#{$border}-0 {
+    #{$border}: 0 !important;
+  }
+}
+
+@each $name, $color in $colors {
+  .border-#{$name} {
+    border-color: $color !important;
+  }
+}

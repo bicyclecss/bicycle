@@ -1,0 +1,21 @@
+/* ===== Typography Styles ===== */
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: $header-line-height;
+  font-weight: $header-weight;
+  color: $header-text-color;
+  margin: 0 0 20px 0;
+}
+
+/* Headers Font Sizes */
+
+@each $screen, $headers in $header-font-sizes {
+  @include from-screen-size($screen) {
+
+    @each $header, $font-size in $headers {
+      #{$header} {
+        font-size: $font-size + px;
+      }
+    }
+  }
+}

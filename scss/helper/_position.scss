@@ -1,0 +1,13 @@
+/* ===== Position ===== */
+
+/* Variables */
+
+$positions: static, relative, absolute, fixed;
+
+/* Border Classes */
+
+@each $position in $positions {
+  .position-#{$position} {
+    position: $position !important;
+  }
+}

@@ -1,0 +1,78 @@
+/* ===== Grig ===== */
+
+$gutter:                 15 !default;
+$columns:                12 !default;
+
+$screen-sizes: (
+  xs: 0,
+  sm: 557,
+  md: 768,
+  lg: 1230,
+) !default;
+
+/* ===== Typography ===== */
+
+$default-font-family:     Roboto, 'Helvetica Neue', Arial, sans-serif !default;
+$default-text-color:      #373a3c !default;
+
+$body-font-family:        $default-font-family !default;
+$body-font-size:          16 !default;
+$body-line-height:        1.6 !default;
+$body-text-color:         $default-text-color !default;
+$body-background-color:   #f7f8fb !default;
+
+/* ===== Colors ===== */
+
+/* Base Colors */
+
+$white:                   #fff !default;
+$black:                   #000 !default;
+$red:                     #ff4954 !default;
+$yellow:                  #FBC627 !default;
+$orange:                  #ff8765 !default;
+$blue:                    #0facf3 !default;
+$light-blue:              #54ceff !default;
+$green:                   #16DB93 !default;
+$pink:                    #fe60a1 !default;
+$purple:                  #8089ff !default;
+
+/* Theme Colors */
+
+$primary:                 $blue !default;
+$secondary:               $purple !default;
+$default:                 #b4b7c6 !default;
+$info:                    $light-blue !default;
+$success:                 $green !default;
+$error:                   $red !default;
+$warning:                 $yellow !default;
+
+/* Gray Colors */
+
+$light-gray:              #eceeef !default;
+$medium-gray:             #dfe3e9 !default;
+$dark-gray:               #BDB9BD !default;
+
+/* Colors Map */
+
+$colors: (
+  white: $white,
+  black: $black,
+  red: $red,
+  yellow: $yellow,
+  orange: $orange,
+  blue: $blue,
+  light-blue: $light-blue,
+  green: $green,
+  pink: $pink,
+  purple: $purple,
+  primary: $primary,
+  secondary: $secondary,
+  default: $default,
+  info: $info,
+  success: $success,
+  error: $error,
+  warning: $yellow,
+  light-gray: $light-gray,
+  medium-gray: $medium-gray,
+  dark-gray: $dark-gray
+) !default;
